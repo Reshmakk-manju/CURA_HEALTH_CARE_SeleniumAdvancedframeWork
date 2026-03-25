@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="password" value="ThisIsNotAPasswordd"/>
+    <parameter name="user" value="John"/>
+    <classes>
+      <class name="pageTesting.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="reset"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pageTesting.LoginTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <parameter name="password" value="ThisIsNotAPassword"/>
+    <parameter name="user" value="John Doee"/>
+    <classes>
+      <class name="pageTesting.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="reset"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pageTesting.LoginTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <parameter name="password" value="ThisIsNotAPasswordd"/>
+    <parameter name="user" value="John Doe21"/>
+    <classes>
+      <class name="pageTesting.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="reset"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pageTesting.LoginTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" name="Test5(failed)">
+    <parameter name="password" value=""/>
+    <parameter name="user" value=""/>
+    <classes>
+      <class name="pageTesting.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="reset"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pageTesting.LoginTest -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+  <test thread-count="5" name="Test6(failed)">
+    <parameter name="password" value="thisIsNotAPassword"/>
+    <parameter name="user" value="John Doe"/>
+    <classes>
+      <class name="pageTesting.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="reset"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pageTesting.LoginTest -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+</suite> <!-- Failed suite [Suite] -->

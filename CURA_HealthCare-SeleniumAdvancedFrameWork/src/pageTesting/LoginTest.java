@@ -26,6 +26,7 @@ public class LoginTest {
 	  lp=new LoginPage(driver);
 	  
   }
+  
   @Parameters({"user","password"})
   @Test
   public void testLogin(String username,String password) {
@@ -38,11 +39,7 @@ public class LoginTest {
 	  String expectedUrl="https://katalon-demo-cura.herokuapp.com/#appointment";
 	  String actualUrl=driver.getCurrentUrl();
 	  SoftAssert soft=new SoftAssert();
-	  if(username.equals("John Doe") && password.equals("ThisIsNotAPassword")) {
-		    soft.assertEquals(actualUrl, expectedUrl, "Valid login failed");
-		} else {
-		    soft.assertTrue(actualUrl.contains("profile"), "Invalid login not handled properly");
-		}
+	  soft.assertEquals(actualUrl, expectedUrl, "Login should succeed only for valid credentials");
 	  soft.assertAll();
 	  
   }

@@ -13,6 +13,7 @@ public class LoginPage {
   By uname = By.id("txt-username");
   By pwd = By.id("txt-password");
   By login = By.id("btn-login");
+  By errorMsg = By.xpath("//p[@class='lead text-danger']");
  
   public LoginPage(WebDriver driver) {
 	  this.driver=driver; 
@@ -25,5 +26,10 @@ public class LoginPage {
   }
   public void Login() {
 	  driver.findElement(login).click();
+  }
+ 
+
+  public String getErrorMessage() {
+      return driver.findElement(errorMsg).getText();
   }
 }
