@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+  <parameter name="user" value="John Doe"></parameter>
+  <parameter name="password" value="ThisIsNotAPassword"></parameter>
+    <classes>
+      <class name="pageTesting.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test2">
+  <parameter name="user" value="John"></parameter>
+  <parameter name="password" value="ThisIsNotAPasswordd"></parameter>
+    <classes>
+      <class name="pageTesting.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test3">
+  <parameter name="user" value="John Doee"></parameter>
+  <parameter name="password" value="ThisIsNotAPassword"></parameter>
+    <classes>
+      <class name="pageTesting.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test4">
+  <parameter name="user" value="John Doe21"></parameter>
+  <parameter name="password" value="ThisIsNotAPasswordd"></parameter>
+    <classes>
+      <class name="pageTesting.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test5">
+  <parameter name="user" value=""></parameter>
+  <parameter name="password" value=""></parameter>
+    <classes>
+      <class name="pageTesting.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test6">
+  <parameter name="user" value="John Doe"></parameter>
+  <parameter name="password" value="thisIsNotAPassword"></parameter>
+    <classes>
+      <class name="pageTesting.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

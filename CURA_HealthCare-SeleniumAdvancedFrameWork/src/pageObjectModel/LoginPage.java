@@ -10,9 +10,9 @@ import org.testng.annotations.AfterTest;
 
 public class LoginPage {
   public WebDriver driver;
-  By uname=By.xpath("//input[@name='username']");
-  By pwd=By.xpath("//input[@name='password']");
-  By login=By.xpath("//button[@type='submit']");
+  By uname = By.id("txt-username");
+  By pwd = By.id("txt-password");
+  By login = By.id("btn-login");
  
   public LoginPage(WebDriver driver) {
 	  this.driver=driver; 

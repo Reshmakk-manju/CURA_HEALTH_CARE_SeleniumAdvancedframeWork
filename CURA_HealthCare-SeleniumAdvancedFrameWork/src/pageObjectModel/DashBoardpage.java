@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 
 public class DashBoardpage {
   WebDriver driver;
-  By makeApt=By.xpath("//a[@id='btn-make-appointment']");
+  By makeApt=By.id("btn-make-appointment");;
   public DashBoardpage(WebDriver driver) {
-	  driver=new ChromeDriver();
+	  this.driver = driver;
   }
-  public void clickMe(String m) {
+  public void clickMakeAppointment() {
 	  driver.findElement(makeApt).click();
   }
 }
